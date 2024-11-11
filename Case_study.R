@@ -329,10 +329,17 @@ main <- function() {
                    fr(UL_midp_UMVCUE, 2), "]")
   )
   
+  pval <- c(NA, pval_MLE[1:2], NA, pval_CMAE[1:2], NA, pval_UMVCUE[1:2])
+  
+  col5 <- fr(pval, 2)
+  col5[pval < 0.001] <- "<0.001"
+  col5[is.na(pval)] <- ""
+  
   out <- data.frame(Method = col1,
                     Parameter = col2,
                     Placebo = col3,
-                    BARI = col4)
+                    BARI = col4,
+                    Pvalue = col5)
 
   out
 }
