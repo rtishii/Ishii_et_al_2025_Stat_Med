@@ -7,4 +7,4 @@
 <!-- badges: end -->
 
 R codes for the simulation and case studies of [Ishii et
-al. (2025)](https://doi.org/10.1002/sim.70003). are provided.
+al. (2025)](https://doi.org/10.1002/sim.70003) are provided.
